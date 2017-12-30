@@ -28,8 +28,8 @@ describe('calculator', function() {
   describe('divide',function() {
     it('returns the quotient of two numbers', function() {
       expect(calculator.divide(10, 2)).to.equal(5);
-      //expect(calculator.divide(30, 1)).to.equal(30);
-      //expect(calculator.divide(50, 5)).to.equal(10);
+      expect(calculator.divide(30, 1)).to.equal(30);
+      expect(calculator.divide(50, 5)).to.equal(10);
     });
   });
 
@@ -45,5 +45,8 @@ const calculator = {
   },
   multiply: function(a, b) {
     return a*b;
+  },
+  divide: function(a, b) {
+    return a/b;
   }
 };
